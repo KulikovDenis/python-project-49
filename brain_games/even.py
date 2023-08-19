@@ -1,6 +1,7 @@
 from random import randint
 import brain_games.brain_even_code
 
+
 def raund():
   i = 0
   while i < 3:
