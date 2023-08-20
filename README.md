@@ -9,3 +9,9 @@
 
 ### Lost in the game "Even Check":
 [![asciicast](https://asciinema.org/a/603476.svg)](https://asciinema.org/a/603476)
+
+### Winning the game "Calculator":
+[![asciicast](https://asciinema.org/a/603636.svg)](https://asciinema.org/a/603636)
+
+### Lost in the game "Calculator":
+[![asciicast](https://asciinema.org/a/603637.svg)](https://asciinema.org/a/603637)
