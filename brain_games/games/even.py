@@ -5,7 +5,7 @@ import brain_games.brain_code
 def round():
   i = 0
   while i < 3:
-    random_number = randint(0,100)
+    random_number = randint(0, 100)
     print('Question: ' + str(random_number))
     answer = input('Your answer: ')
     if answer == 'yes' or answer == 'no':
