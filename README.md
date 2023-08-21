@@ -21,3 +21,9 @@
 
 ### Lost in the game "GCD":
 [![asciicast](https://asciinema.org/a/603774.svg)](https://asciinema.org/a/603774)
+
+### Winning the game "Arithmetic progression":
+[![asciicast](https://asciinema.org/a/603841.svg)](https://asciinema.org/a/603841)
+
+### Lost in the game "Arithmetic progression":
+[![asciicast](https://asciinema.org/a/603842.svg)](https://asciinema.org/a/603842)
