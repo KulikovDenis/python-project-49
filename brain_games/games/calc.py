@@ -5,8 +5,8 @@ import brain_games.brain_code
 def round():
   i = 0
   while i < 3:
-    random_number_1 = randint(0,10)
-    random_number_2 = randint(0,10)
+    random_number_1 = randint(0, 10)
+    random_number_2 = randint(0, 10)
     operations = choice(['+', '-', '*'])
     print(f'Question: {random_number_1} {operations} {random_number_2}')
     answer = input('Your answer: ')
