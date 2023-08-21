@@ -15,3 +15,9 @@
 
 ### Lost in the game "Calculator":
 [![asciicast](https://asciinema.org/a/603637.svg)](https://asciinema.org/a/603637)
+
+### Winning the game "GCD":
+[![asciicast](https://asciinema.org/a/603773.svg)](https://asciinema.org/a/603773)
+
+### Lost in the game "GCD":
+[![asciicast](https://asciinema.org/a/603774.svg)](https://asciinema.org/a/603774)
