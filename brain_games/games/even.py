@@ -24,7 +24,7 @@ def round():
         else:
             print(answer + " is wrong answer ;(. Correct answer was 'yes' or no'.")
             print("Let's try again, " + brain_games.brain_code.name + "!")
-        break
+            break
         i = i + 1
     if i == 3:
         print('Congratulations, ' + brain_games.brain_code.name + '!')
