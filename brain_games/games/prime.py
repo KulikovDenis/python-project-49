@@ -25,12 +25,12 @@ def round():  # noqa: C901
         print('Question: ' + str(random_number))
         answer = input('Your answer: ')
         if answer == 'yes' or answer == 'no':
-            if divisors is True and answer == 'yes':
+            if divisors(random_number) is True and answer == 'yes':
                 print('Correct!')
-            elif divisors is False and answer == 'no':
+            elif divisors(random_number) is False and answer == 'no':
                 print('Correct!')
             else:
-                if divisors is True:
+                if divisors(random_number) is True:
                     print("'no'" + text + "'yes'" + ".")
                     print(text_1 + brain_games.brain_code.name + "!")
                 else:
@@ -40,7 +40,7 @@ def round():  # noqa: C901
         else:
             print(answer + text + "'yes' or no'.")
             print(text_1 + brain_games.brain_code.name + "!")
-        break
+            break
         i = i + 1
     if i == 3:
         print('Congratulations, ' + brain_games.brain_code.name + '!')
