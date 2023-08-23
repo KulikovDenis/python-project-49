@@ -2,7 +2,11 @@ from random import randint
 import brain_games.brain_code
 
 
-def round():
+text = ' is wrong answer ;(. Correct answer was '
+text_1 = "Let's try again, "
+
+
+def round():  # noqa: C901
     i = 0
     while i < 3:
         random_number = randint(0, 100)
@@ -15,15 +19,15 @@ def round():
                 print('Correct!')
             else:
                 if random_number % 2 == 0:
-                    print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-                    print("Let's try again, " + brain_games.brain_code.name + "!")
+                    print("'no'" + text + "'yes'" + ".")
+                    print(text_1 + brain_games.brain_code.name + "!")
                 else:
-                    print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-                    print("Let's try again, " + brain_games.brain_code.name + "!")
+                    print("'yes'" + text + "'no'" + ".")
+                    print(text_1 + brain_games.brain_code.name + "!")
                 break
         else:
-            print(answer + " is wrong answer ;(. Correct answer was 'yes' or no'.")
-            print("Let's try again, " + brain_games.brain_code.name + "!")
+            print(answer + text + "'yes' or 'no'.")
+            print(text_1 + brain_games.brain_code.name + "!")
             break
         i = i + 1
     if i == 3:

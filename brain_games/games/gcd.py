@@ -3,6 +3,10 @@ import brain_games.brain_code
 from math import gcd
 
 
+text = ' is wrong answer ;(. Correct answer was '
+text_1 = "Let's try again, "
+
+
 def round():
     i = 0
     while i < 3:
@@ -10,11 +14,12 @@ def round():
         random_number_2 = randint(1, 10)
         print(f'Question: {random_number_1} {random_number_2}')
         answer = input('Your answer: ')
-        if gcd(int(random_number_1), int(random_number_2)) == int(answer):
-            print('Correct!') 
+        number = gcd(int(random_number_1), int(random_number_2))
+        if number == int(answer):
+            print('Correct!')
         else:
-            print(answer + ' is wrong answer ;(. Correct answer was ' + str(gcd(int(random_number_1), int(random_number_2))) + '.')
-            print("Let's try again, " + brain_games.brain_code.name + "!")
+            print(answer + text + str(number) + '.')
+            print(text_1 + brain_games.brain_code.name + "!")
             break
         i = i + 1
     if i == 3:

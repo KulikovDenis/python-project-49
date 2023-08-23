@@ -3,6 +3,10 @@ from random import randint
 from math import sqrt
 
 
+text = ' is wrong answer ;(. Correct answer was '
+text_1 = "Let's try again, "
+
+
 def divisors(random_number):
     if random_number <= 1:
         return False
@@ -14,28 +18,28 @@ def divisors(random_number):
     return True
 
 
-def round():
+def round():  # noqa: C901
     i = 0
     while i < 3:
         random_number = randint(0, 100)
         print('Question: ' + str(random_number))
         answer = input('Your answer: ')
         if answer == 'yes' or answer == 'no':
-            if divisors(random_number) == True and answer == 'yes':
+            if divisors is True and answer == 'yes':
                 print('Correct!')
-            elif divisors(random_number) == False and answer == 'no':
+            elif divisors is False and answer == 'no':
                 print('Correct!')
             else:
-                if divisors(random_number) == True:
-                    print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-                    print("Let's try again, " + brain_games.brain_code.name + "!")
+                if divisors is True:
+                    print("'no'" + text + "'yes'" + ".")
+                    print(text_1 + brain_games.brain_code.name + "!")
                 else:
-                    print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-                    print("Let's try again, " + brain_games.brain_code.name + "!")
+                    print("'yes'" + text + "'no'" + ".")
+                    print(text_1 + brain_games.brain_code.name + "!")
                 break
         else:
-            print(answer + " is wrong answer ;(. Correct answer was 'yes' or no'.")
-            print("Let's try again, " + brain_games.brain_code.name + "!")
+            print(answer + text + "'yes' or no'.")
+            print(text_1 + brain_games.brain_code.name + "!")
             break
         i = i + 1
     if i == 3:

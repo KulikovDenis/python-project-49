@@ -2,7 +2,11 @@ from random import randint, choice
 import brain_games.brain_code
 
 
-def round():
+text = ' is wrong answer ;(. Correct answer was '
+text_1 = "Let's try again, "
+
+
+def round():  # noqa: C901
     i = 0
     while i < 3:
         random_number_1 = randint(0, 10)
@@ -15,24 +19,24 @@ def round():
             if result == int(answer):
                 print('Correct!')
             else:
-                print(answer + ' is wrong answer ;(. Correct answer was ' + str(result) + '.')
-                print("Let's try again, " + brain_games.brain_code.name + "!")
+                print(answer + text + str(result) + '.')
+                print(text_1 + brain_games.brain_code.name + "!")
                 break
         elif operations == '-':
             result = int(random_number_1 - random_number_2)
             if result == int(answer):
                 print('Correct!')
             else:
-                print(answer + ' is wrong answer ;(. Correct answer was ' + str(result) + '.')
-                print("Let's try again, " + brain_games.brain_code.name + "!")
+                print(answer + text + str(result) + '.')
+                print(text_1 + brain_games.brain_code.name + "!")
                 break
         elif operations == '*':
             result = int(random_number_1 * random_number_2)
             if result == int(answer):
                 print('Correct!')
             else:
-                print(answer + ' is wrong answer ;(. Correct answer was ' + str(result) + '.')
-                print("Let's try again, " + brain_games.brain_code.name + "!")
+                print(answer + text + str(result) + '.')
+                print(text_1 + brain_games.brain_code.name + "!")
                 break
         i = i + 1
     if i == 3:

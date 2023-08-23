@@ -2,6 +2,10 @@ from random import choice, randint
 import brain_games.brain_code
 
 
+text = ' is wrong answer ;(. Correct answer was '
+text_1 = "Let's try again, "
+
+
 def round():
     i = 0
     while i < 3:
@@ -14,8 +18,8 @@ def round():
         if str(random_number_1) == answer:
             print('Correct!')
         else:
-            print(answer + ' is wrong answer ;(. Correct answer was ' + str(random_number_1) + '.')
-            print("Let's try again, " + brain_games.brain_code.name + "!")
+            print(answer + text + str(random_number_1) + '.')
+            print(text_1 + brain_games.brain_code.name + "!")
             break
         i = i + 1
     if i == 3:

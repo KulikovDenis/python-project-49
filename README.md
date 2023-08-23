@@ -1,3 +1,23 @@
+### Brain Games
+This package contains five simple math games:
+* Brain-even. Have to check is number is even.
+* Brain-calc. Calculating the result of operation between two numbers.
+* Brain-gcd. Finding the greatest common divider.
+* Brain-progression. Finding skipped number in arithmetic progression
+* Brain-prime. Checking if number is prime.
+
+
+### Installation:
+Use following commands for installing:
+
+```
+git clone https://github.com/KulikovDenis/python-project-49.git
+poetry install
+poetry build
+poetry publish
+python3 -m pip install --upgrade --force-reinstall dist/hexlet_code-0.1.0-py3-none-any.whl
+```
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/KulikovDenis/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/KulikovDenis/python-project-49/actions)
 
