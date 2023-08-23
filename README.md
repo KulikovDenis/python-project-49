@@ -27,3 +27,9 @@
 
 ### Lost in the game "Arithmetic progression":
 [![asciicast](https://asciinema.org/a/603842.svg)](https://asciinema.org/a/603842)
+
+### Winning the game "Prime number":
+[![asciicast](https://asciinema.org/a/604219.svg)](https://asciinema.org/a/604219)
+
+### Lost in the game "Prime number":
+[![asciicast](https://asciinema.org/a/604220.svg)](https://asciinema.org/a/604220)
