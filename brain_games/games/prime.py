@@ -36,7 +36,7 @@ def round():  # noqa: C901
                 else:
                     print("'yes'" + text + "'no'" + ".")
                     print(text_1 + brain_games.brain_code.name + "!")
-            break
+                break
         else:
             print(answer + text + "'yes' or no'.")
             print(text_1 + brain_games.brain_code.name + "!")
